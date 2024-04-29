@@ -482,7 +482,7 @@ i:hover {
     overflow-x: hidden;
   }
   .col-movie {
-    position: relative;
+
     height: 13vh;
     width: 20vw;
     display: flex;
@@ -490,5 +490,12 @@ i:hover {
     align-items: center;
     overflow: hidden;
     z-index: 9999;
+  }
+  .show-body:hover {
+    transform: scale(1.1);
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    background-color: black !important;
   }
 }
