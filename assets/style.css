@@ -1,0 +1,493 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+#carregamento {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.imagem-carregamento {
+  height: 250px;
+  width: 250px;
+}
+.piramide {
+  position: relative;
+}
+
+.pesquisar {
+  text-decoration: none;
+}
+
+main {
+  background-image: url("./images/fundo-futurista.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200vh;
+}
+
+.card-info {
+  z-index: 1;
+  margin-bottom: 20px;
+  height: 50vh;
+  -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.infos-body {
+  background-color: black;
+  padding: 15px;
+  color: white;
+  border-radius: 10%;
+  transform: scale(1.2);
+  -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.list-group-item {
+  background-color: black;
+  color: white;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+.linha {
+  height: auto;
+}
+.corpo.lista {
+  height: 95%;
+}
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 75vw;
+  align-content: flex-start;
+  justify-content: center;
+  -webkit-animation: fade 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+  animation: fade 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.lista-cards {
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.card {
+  height: 100%;
+
+  background-color: black !important;
+}
+.show-body {
+  transition: all 0.5s ease-out;
+  margin: 10px;
+  top: 0;
+}
+.show-body > div {
+  display: none;
+}
+
+.show-body:hover {
+  transform: scale(1.1);
+  position: absolute;
+  z-index: 999;
+  top: -30px;
+  background-color: black !important;
+}
+
+.show-body:hover > div {
+  display: block;
+  background-color: black !important;
+  color: white;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.col-movie {
+  position: relative;
+  height: 150px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botoes {
+  width: 75vw;
+  margin-top: 3%;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: 0.5;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+footer {
+  height: 20vh;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+a {
+  color: white;
+}
+i {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  z-index: 1;
+}
+.instagram {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  border-radius: 50%;
+}
+.linkedin {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(135deg, #0077b5, #0a66c2);
+
+  border-radius: 50%;
+}
+.github {
+  background: linear-gradient(135deg, #6b34be, #6e5494);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.imagem-perfil {
+  height: 130px;
+  border-radius: 30%;
+}
+.imagem-perfil:hover {
+  transform: scale(1.05);
+  transition: 0.5;
+}
+
+@media screen and (max-width: 1700px) {
+  main {
+    background-image: url("./images/fundo-futurista.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main {
+    background-image: url("./images/fundo-futurista.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+
+  .piramide {
+    display: none;
+  }
+  .ancora {
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+
+  .btn {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    background-image: url("");
+
+    background-color: rgba(0, 0, 0, 0.759);
+    height: auto;
+  }
+  .btn {
+    width: 100px;
+  }
+  .lista {
+    height: auto;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+  }
+  footer {
+    height: 40vh;
+    width: 100vw;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+  }
+  .footer-image {
+    height: 130px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .icones {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer-text {
+    width: 60vw;
+    margin: 20px 10px;
+  }
+  .card-info {
+    position: relative;
+    margin-left: 20px;
+    height: 70vh;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    background-image: url("");
+
+    background-color: rgba(0, 0, 0, 0.759);
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .btn {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: small;
+  }
+
+  .logo {
+    height: 50px;
+  }
+  .card-info {
+    position: relative;
+    margin-left: 50px;
+    height: 50vh;
+    width: 40vw;
+    z-index: 1;
+  }
+  .infos-body {
+    height: 100vh;
+    margin-left: 20%;
+  }
+
+  footer {
+    height: 40vh;
+    width: 100vw;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+  }
+  .footer-image {
+    height: 130px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .icones {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer-text {
+    width: 40vw;
+  }
+  .linha {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .col-movie {
+    position: relative;
+    height: 13vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+}
