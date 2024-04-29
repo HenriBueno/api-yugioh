@@ -1,8 +1,13 @@
 ### API de Cartas Yu-Gi-Oh! 🃏
 
-Este é um projeto em JavaScript que utiliza a API de cartas Yu-Gi-Oh! para exibir informações sobre diferentes cartas. Abaixo está uma explicação interativa do código:
+Este é um projeto em JavaScript que utiliza a API de cartas Yu-Gi-Oh! para exibir informações sobre diferentes cartas. Abaixo está uma explicação do código:
 
 ---
+
+![print da api](https://raw.githubusercontent.com/HenriBueno/api-yugioh/818ca0b0afa5d2bef6b8b1cdc3767693e73bac60/assets/images/print1.png)
+
+![print da api](https://raw.githubusercontent.com/HenriBueno/api-yugioh/main/assets/images/print2.png)
+
 
 ### Funcionalidades Principais 🚀
 
