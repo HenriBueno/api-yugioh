@@ -4,6 +4,13 @@ Este é um projeto em JavaScript que utiliza a API de cartas Yu-Gi-Oh! para exib
 
 ---
 
+ ```markdown
+   ![print da api](https://github.com/HenriBueno/api-yugioh/blob/main/assets/images/print2.png)
+   ```
+ ```markdown
+   ![print da api](https://github.com/HenriBueno/api-yugioh/blob/main/assets/images/print1.png)
+   ```
+
 ### Funcionalidades Principais 🚀
 
 1. **Listar Cartas**
