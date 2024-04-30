@@ -354,6 +354,7 @@ i:hover {
   }
 }
 
+
 @media screen and (max-width: 800px) {
   main {
     background-image: url("");
@@ -435,14 +436,30 @@ i:hover {
   }
   .card-info {
     position: relative;
-    margin-left: 50px;
+    margin-left: 35px;
     height: 50vh;
     width: 40vw;
     z-index: 1;
   }
   .infos-body {
-    height: 100vh;
-    margin-left: 20%;
+    border: solid 1px white;
+    height: auto;
+    margin-left: 15%;
+    padding: 2px;
+
+    border-radius: 0px;
+  }
+  .card-info {
+    padding: 0;
+    height: 35vh;
+    width: 30vw;
+    
+    
+  }
+.corpo.lista{
+      width: 60vw;
+      display: flex !important;
+      align-items: center !important;
   }
 
   footer {
@@ -476,13 +493,13 @@ i:hover {
     width: 40vw;
   }
   .linha {
+    width: 100vw;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     overflow-x: hidden;
   }
   .col-movie {
-
     height: 13vh;
     width: 20vw;
     display: flex;
@@ -498,4 +515,14 @@ i:hover {
     top: 0px;
     background-color: black !important;
   }
+  .text-center{
+        text-align: start !important;
+  }
+  .list-group-item {
+
+    display: block;
+    padding: 5px;
+
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}
 }
